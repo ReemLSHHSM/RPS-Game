@@ -58,7 +58,7 @@ namespace Rock__Paper__Scissors
         //}
         public string Rounds(Player player)
         {
-            while (player.Score < 3 && AI_score < 3)
+            while (player.Score < 3 || AI_score < 3)
             {
                 string move = player.Move();
                 Compare(player, move, AI_move());//*********************************
