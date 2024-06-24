@@ -30,10 +30,10 @@ namespace RPSGameTest
             RPSGame game = new RPSGame();
 
             // Act
-            string result = game.Compare(player, playerChoice, "rock"); // Simulate AI choosing rock
+            string result = game.Compare(player, playerChoice, "rock"); 
 
             // Assert
-            Assert.Equal("reem", result); // Player should win with paper over rock
+            Assert.Equal("reem", result); 
         }
 
         [Fact]
@@ -45,10 +45,10 @@ namespace RPSGameTest
             RPSGame game = new RPSGame();
 
             // Act
-            string result = game.Compare(player, playerChoice, "paper"); // Simulate AI choosing paper
+            string result = game.Compare(player, playerChoice, "paper"); 
 
             // Assert
-            Assert.Equal("AI", result); // AI should win with paper over rock
+            Assert.Equal("AI", result); 
         }
 
 
