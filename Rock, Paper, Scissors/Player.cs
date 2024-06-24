@@ -67,7 +67,7 @@ namespace Rock__Paper__Scissors
         
         public string Move()
         {
-            Console.WriteLine("Choose a move please(Rock,Paper,Scissors)");
+            Console.WriteLine("Choose a move please(Rock,Paper,Scissors) \n");
             string move = Console.ReadLine().ToLower();
 
             Boolean move_test=Int32.TryParse(move, out int move_output);

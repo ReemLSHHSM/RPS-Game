@@ -7,7 +7,7 @@ namespace Rock__Paper__Scissors
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the game of Rock Paper Scissors\nYou'll play against Billy the computer, good luck :) \n");
-            Console.WriteLine("Enter your name:");
+            Console.WriteLine("Enter your name: \n");
             
             string name = Console.ReadLine();
             bool name_test = Int32.TryParse(name, out int name_output);

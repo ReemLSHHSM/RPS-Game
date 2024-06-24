@@ -17,6 +17,7 @@ namespace RPSGameTest
             string result = game.Compare(player, playerChoice, "rock"); 
 
             // Assert
+            
             Assert.Equal("tie", result);
         }
 
@@ -66,6 +67,7 @@ namespace RPSGameTest
             // Assert
             Assert.Equal(initialPlayerScore, player.Score); 
             Assert.Equal(initialAIScore + 1, game.AI_score); 
+            
         }
     }
 }
