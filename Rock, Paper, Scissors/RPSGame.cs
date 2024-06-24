@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Rock__Paper__Scissors
 {
@@ -17,7 +19,7 @@ namespace Rock__Paper__Scissors
         public string Compare(Player player, string move, string AIMove)
         {
             //string AIMove = AI_move();
-            AIMove = AI_move();
+          
             Console.WriteLine($"Billy chose: {AIMove} \n");
 
             if ((move == "rock" && AIMove == "scissors") ||
@@ -48,7 +50,12 @@ namespace Rock__Paper__Scissors
                 return "";
             }
         }
-
+        //public string test()
+        //{
+        //    string ai_move = AI_move();
+        //    string compare=Compare(Player player, string move, string AIMove)
+        //    return "";
+        //}
         public string Rounds(Player player)
         {
             while (player.Score < 3 && AI_score < 3)
